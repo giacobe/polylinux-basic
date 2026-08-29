@@ -1,0 +1,16 @@
+rain
+snow
+sleet
+hail
+fog
+wind
+thunder
+lightning
+storm
+tornado
+hurricane
+blizzard
+drizzle
+frost
+mist
+sunshine

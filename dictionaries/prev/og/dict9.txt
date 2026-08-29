@@ -1,0 +1,16 @@
+corgi
+bulldog
+saintbernard
+dobermann
+greatdane
+mastiff
+malamute
+pitbull
+poodle
+beagle
+rottweiler
+dachshund
+greyhound
+terrier
+chihuahua
+spaniel

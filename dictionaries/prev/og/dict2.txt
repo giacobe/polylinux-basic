@@ -1,0 +1,16 @@
+microwave
+toaster
+oven
+stove
+refrigerator
+washer
+dryer
+freezer
+waffleiron
+keureg
+blender
+airfryer
+canopener
+dishwasher
+griddle
+mixer

@@ -1,0 +1,16 @@
+pencil
+pen
+notebook
+binder
+folder
+paper
+textbook
+backpack
+calculator
+ruler
+eraser
+highlighter
+marker
+stapler
+scissors
+whiteboard

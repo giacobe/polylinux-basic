@@ -1,0 +1,16 @@
+teacher
+doctor
+nurse
+engineer
+lawyer
+plumber
+electrician
+mechanic
+firefighter
+farmer
+carpenter
+cashier
+manager
+driver
+pilot
+dentist

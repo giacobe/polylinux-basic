@@ -1,0 +1,16 @@
+velveeta
+asiago
+mozzerella
+colby
+cheddar
+parmesan
+brie
+fetta
+pepperjack
+provolone
+limburger
+muenster
+roquefort
+gouda
+ricotta
+cheesewhiz

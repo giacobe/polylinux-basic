@@ -1,0 +1,16 @@
+water
+milk
+juice
+soda
+coffee
+tea
+lemonade
+cola
+smoothie
+punch
+cider
+milkshake
+cocoa
+seltzer
+espresso
+latte

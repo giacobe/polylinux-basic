@@ -1,0 +1,16 @@
+second
+minute
+hour
+day
+week
+month
+year
+decade
+century
+morning
+evening
+night
+noon
+midnight
+season
+era

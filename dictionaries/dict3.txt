@@ -1,0 +1,16 @@
+house
+apartment
+school
+hospital
+church
+mosque
+temple
+library
+museum
+stadium
+theater
+cinema
+factory
+warehouse
+courthouse
+skyscraper

@@ -1,0 +1,16 @@
+chair
+table
+couch
+sofa
+desk
+bed
+dresser
+cabinet
+shelf
+bookshelf
+nightstand
+stool
+bench
+recliner
+wardrobe
+mirror

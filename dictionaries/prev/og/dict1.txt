@@ -1,0 +1,16 @@
+spirit
+southwest
+united
+delta
+american
+jetblue
+allegiant
+virgin
+suncountry
+cathay
+qantas
+britishairways
+easyjet
+lufthansa
+ryanair
+aisiana

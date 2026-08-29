@@ -1,0 +1,16 @@
+mountain
+hill
+valley
+river
+lake
+ocean
+beach
+desert
+forest
+island
+canyon
+volcano
+plateau
+swamp
+waterfall
+glacier

@@ -1,0 +1,16 @@
+mcdonalds
+wendys
+tacobell
+chickfila
+chipotle
+panera
+burgerking
+jerseymikes
+dairyqueen
+steaknshake
+qdoba
+timhortons
+whataburger
+bojangles
+popeyes
+zaxbys

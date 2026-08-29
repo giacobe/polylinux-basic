@@ -1,0 +1,16 @@
+basil
+salt
+pepper
+cardamom
+cilantro
+cinnamon
+paprika
+garlic
+allspice
+cloves
+cumin
+ginger
+tarragon
+majoram
+rosemary
+parsley

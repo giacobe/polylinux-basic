@@ -1,0 +1,1109 @@
+{
+  "source_archive": "lab1-rootfs.cpio.gz",
+  "source_sha256": "3354ed6f0025d6486b9a11554f1da7db1df0b6e09e798c65fa404f2bf783e45f",
+  "archive_entries": 1812,
+  "root_entries": 123,
+  "entries": [
+    {
+      "path": ".profile",
+      "mode": "0644",
+      "uid": 0,
+      "gid": 0,
+      "size": 56,
+      "type": "file",
+      "sha256": "a944da8c0a3262b163cff4868559539dfe848630fbe7dc4cda291e21dd1aa206"
+    },
+    {
+      "path": "LICENSE",
+      "mode": "0644",
+      "uid": 0,
+      "gid": 0,
+      "size": 35149,
+      "type": "file",
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+    },
+    {
+      "path": "README.md",
+      "mode": "0644",
+      "uid": 0,
+      "gid": 0,
+      "size": 59,
+      "type": "file",
+      "sha256": "1f7ceb0658962fa4c713c6d7b65f3f3a90a0c30da2c538e9ac9e99fb8a5e35f1"
+    },
+    {
+      "path": "TJInstall.sh",
+      "mode": "0755",
+      "uid": 0,
+      "gid": 0,
+      "size": 4044,
+      "type": "file",
+      "sha256": "45df997fef93f691417ac09c680880ee5fa516c8e557054e02688e2d91a7ece1"
+    },
+    {
+      "path": "TJlevel1.sh",
+      "mode": "0755",
+      "uid": 0,
+      "gid": 0,
+      "size": 897,
+      "type": "file",
+      "sha256": "a6294091428f09a7392d232a9c57ed1d764e4f80c43060cd298feaa7b56d4afb"
+    },
+    {
+      "path": "TJlevel2.sh",
+      "mode": "0755",
+      "uid": 0,
+      "gid": 0,
+      "size": 885,
+      "type": "file",
+      "sha256": "24582daec253fa6d5d5a289bdcb10356660c927e76d1fe99eaab98675a162b47"
+    },
+    {
+      "path": "TJlevel3.sh",
+      "mode": "0755",
+      "uid": 0,
+      "gid": 0,
+      "size": 1128,
+      "type": "file",
+      "sha256": "59dd42d8015ed319000e20e538eca7b443dc0477c8e26cd56f09b4e62e59d65f"
+    },
+    {
+      "path": "TJlevel4.sh",
+      "mode": "0755",
+      "uid": 0,
+      "gid": 0,
+      "size": 1822,
+      "type": "file",
+      "sha256": "ade517cba1d019d13ed0a1fa4405ad771a18205cd3cb1fa1b2499ff9ae0a2db2"
+    },
+    {
+      "path": "TJlevel5.sh",
+      "mode": "0755",
+      "uid": 0,
+      "gid": 0,
+      "size": 2220,
+      "type": "file",
+      "sha256": "5a69ed9adbdc26d5478618ac062aea11f6a68ac61d622a415812f7f321cb8467"
+    },
+    {
+      "path": "TJlevel6.sh",
+      "mode": "0755",
+      "uid": 0,
+      "gid": 0,
+      "size": 3944,
+      "type": "file",
+      "sha256": "5bb83a5f219f499410f9eca6f33e36d656bec32846d4fca2a9a3acb51b2e818b"
+    },
+    {
+      "path": "TJlevel7.sh",
+      "mode": "0755",
+      "uid": 0,
+      "gid": 0,
+      "size": 2378,
+      "type": "file",
+      "sha256": "e9764fea9954aa63546f15a675cc0a1abb60d66c115fe37c506683ca38cf2b3e"
+    },
+    {
+      "path": "bandit current status.txt",
+      "mode": "0644",
+      "uid": 0,
+      "gid": 0,
+      "size": 45078,
+      "type": "file",
+      "sha256": "959a0d7c43b5a697c6b06413c0b93b7c0fcf1bbdfc89cda8b00c9df203288bac"
+    },
+    {
+      "path": "bandit1.sh",
+      "mode": "0755",
+      "uid": 0,
+      "gid": 0,
+      "size": 821,
+      "type": "file",
+      "sha256": "4a6fa8996552ac246e68cd103cd85341268c81c3db34de74f1cef46614f086db"
+    },
+    {
+      "path": "bandit10.sh",
+      "mode": "0755",
+      "uid": 0,
+      "gid": 0,
+      "size": 2178,
+      "type": "file",
+      "sha256": "e62a5c71fd700786b6d0bbd9da6a55343018146f8141141085bf9679d4e0f814"
+    },
+    {
+      "path": "bandit11.sh",
+      "mode": "0755",
+      "uid": 0,
+      "gid": 0,
+      "size": 986,
+      "type": "file",
+      "sha256": "765ed42ca46da65497f3d0ddd2da860e1ff5f02ccc24ac3d1882c7de15e0d742"
+    },
+    {
+      "path": "bandit12.sh",
+      "mode": "0755",
+      "uid": 0,
+      "gid": 0,
+      "size": 1158,
+      "type": "file",
+      "sha256": "e5701aa789f922e1db75fa6561ca47b11b1e6597a6df9a49a9677a084e3b44c6"
+    },
+    {
+      "path": "bandit13.sh",
+      "mode": "0755",
+      "uid": 0,
+      "gid": 0,
+      "size": 2105,
+      "type": "file",
+      "sha256": "d648fdfb45a360f54c12dbed51e8ca81d5a383e7d0aabc6f4c0372115d4b86b5"
+    },
+    {
+      "path": "bandit2.sh",
+      "mode": "0755",
+      "uid": 0,
+      "gid": 0,
+      "size": 842,
+      "type": "file",
+      "sha256": "4ea556afcd999c87adc8eb19ae769363280ddb93439f43080a4f32126e57b239"
+    },
+    {
+      "path": "bandit3.sh",
+      "mode": "0755",
+      "uid": 0,
+      "gid": 0,
+      "size": 895,
+      "type": "file",
+      "sha256": "6a691326545d79987fce25dca40e9c00b18d8ecc1fbff2b825c6670fa6960a0d"
+    },
+    {
+      "path": "bandit4.sh",
+      "mode": "0755",
+      "uid": 0,
+      "gid": 0,
+      "size": 882,
+      "type": "file",
+      "sha256": "b97cb843c26346f6b0650a5dd073e33edf494f9e2469863a100888c43b76cc96"
+    },
+    {
+      "path": "bandit5.sh",
+      "mode": "0755",
+      "uid": 0,
+      "gid": 0,
+      "size": 1473,
+      "type": "file",
+      "sha256": "293cf8d18cc0a23321a3f88d62c0b9581999e2f47f348409b3535fc40f57fd01"
+    },
+    {
+      "path": "bandit6.sh",
+      "mode": "0755",
+      "uid": 0,
+      "gid": 0,
+      "size": 10657,
+      "type": "file",
+      "sha256": "ff0e2b350503e4010526aed2f7c7572c7d7717c1ab522a1850d2a2d46a320753"
+    },
+    {
+      "path": "bandit7.sh",
+      "mode": "0755",
+      "uid": 0,
+      "gid": 0,
+      "size": 1478,
+      "type": "file",
+      "sha256": "ed2cca8dc544753f02fdefbcb630d99854d83547e812a34e9cf25482fe9ee560"
+    },
+    {
+      "path": "bandit8.sh",
+      "mode": "0755",
+      "uid": 0,
+      "gid": 0,
+      "size": 1636,
+      "type": "file",
+      "sha256": "9bc91ff9c35e91c8ada13ae9ddc740a2708730155e404ed7ebda8983a27d374d"
+    },
+    {
+      "path": "bandit9.sh",
+      "mode": "0755",
+      "uid": 0,
+      "gid": 0,
+      "size": 2015,
+      "type": "file",
+      "sha256": "b652f3edcb5a96a2f702b378cf397756b8fce4bcf2d5a6158255a05ac5f385f6"
+    },
+    {
+      "path": "basic1.sh",
+      "mode": "0755",
+      "uid": 0,
+      "gid": 0,
+      "size": 780,
+      "type": "file",
+      "sha256": "ac8b3fc6cae2b17fe965c5a8e43e2a87142e9ec47f520f1c13bac2e1fafae110"
+    },
+    {
+      "path": "basic10.sh",
+      "mode": "0755",
+      "uid": 0,
+      "gid": 0,
+      "size": 1585,
+      "type": "file",
+      "sha256": "4b7daca471c4c55d79e172e11ca679bc8dbf19ac15200a84f7da8433141d3acc"
+    },
+    {
+      "path": "basic2.sh",
+      "mode": "0755",
+      "uid": 0,
+      "gid": 0,
+      "size": 787,
+      "type": "file",
+      "sha256": "31f989938937cf4fd3c80bf70c802e2c4114a125c560635865a3f1991c76dcaf"
+    },
+    {
+      "path": "basic3.sh",
+      "mode": "0755",
+      "uid": 0,
+      "gid": 0,
+      "size": 1445,
+      "type": "file",
+      "sha256": "b644f9aee11681fdf66b98d6f8e0b501981bdeeb1f72d0b24887e71659534d22"
+    },
+    {
+      "path": "basic4.sh",
+      "mode": "0755",
+      "uid": 0,
+      "gid": 0,
+      "size": 2868,
+      "type": "file",
+      "sha256": "fc4bb866ef7962942f38e6877e6b683f6f9b11e05d7d8184cbdac3ea8b80ed1c"
+    },
+    {
+      "path": "basic5.sh",
+      "mode": "0755",
+      "uid": 0,
+      "gid": 0,
+      "size": 3212,
+      "type": "file",
+      "sha256": "a3197cbdc5329c7a31d87c64e8bd3c66a8e4b984f5fba72122ed10b3893e4b14"
+    },
+    {
+      "path": "basic6.sh",
+      "mode": "0755",
+      "uid": 0,
+      "gid": 0,
+      "size": 3396,
+      "type": "file",
+      "sha256": "da6bb69e5c233945747973a2bd0265a865c78d80b9bef5140cc813ad1286124c"
+    },
+    {
+      "path": "basic7.sh",
+      "mode": "0755",
+      "uid": 0,
+      "gid": 0,
+      "size": 3219,
+      "type": "file",
+      "sha256": "fcf972d61adb42cec7453a1128ba1664dc54f71e3200187a272eaa4bfb5a67cc"
+    },
+    {
+      "path": "basic8.sh",
+      "mode": "0755",
+      "uid": 0,
+      "gid": 0,
+      "size": 3607,
+      "type": "file",
+      "sha256": "22c81e2503a467273a5becfa51045651850500adb5511f595d5f96997912a7ff"
+    },
+    {
+      "path": "basic9.sh",
+      "mode": "0755",
+      "uid": 0,
+      "gid": 0,
+      "size": 3781,
+      "type": "file",
+      "sha256": "3ca101b33e4220c0d9bba3df2468ac4f099af365610b32895e56ae42a4b8b22c"
+    },
+    {
+      "path": "deb_installbandit.sh",
+      "mode": "0755",
+      "uid": 0,
+      "gid": 0,
+      "size": 3353,
+      "type": "file",
+      "sha256": "a69c053e5edad4ee85e5fadc0ea687d73fe7f3ccbb8268623404b8980f35cf3b"
+    },
+    {
+      "path": "dictionaries",
+      "mode": "0755",
+      "uid": 0,
+      "gid": 0,
+      "size": 0,
+      "type": "directory"
+    },
+    {
+      "path": "dictionaries/dict0.txt",
+      "mode": "0644",
+      "uid": 0,
+      "gid": 0,
+      "size": 107,
+      "type": "file",
+      "sha256": "035a19c4203ad643ccea6f024b203f7829a1c17a6c00ceeeba10f968b942b2c8"
+    },
+    {
+      "path": "dictionaries/dict1.txt",
+      "mode": "0644",
+      "uid": 0,
+      "gid": 0,
+      "size": 92,
+      "type": "file",
+      "sha256": "05d04b32d423391ca711b7642f3cea1b0a50724b80f0d8a123bb6b9e929bd254"
+    },
+    {
+      "path": "dictionaries/dict2.txt",
+      "mode": "0644",
+      "uid": 0,
+      "gid": 0,
+      "size": 110,
+      "type": "file",
+      "sha256": "b879fc45716ef548d0dc861807480d3684f306a59fdca5fbbfe8a610410ffbb6"
+    },
+    {
+      "path": "dictionaries/dict3.txt",
+      "mode": "0644",
+      "uid": 0,
+      "gid": 0,
+      "size": 131,
+      "type": "file",
+      "sha256": "ea880d8cb10239692101219ccbbd247cf8a488b9b8a0dd9ea3bf11cfbf181811"
+    },
+    {
+      "path": "dictionaries/dict4.txt",
+      "mode": "0644",
+      "uid": 0,
+      "gid": 0,
+      "size": 132,
+      "type": "file",
+      "sha256": "de34dd672765ac13eba8e2f81f8a238f822ca8f2119b2ba882ce4e2572007c71"
+    },
+    {
+      "path": "dictionaries/dict5.txt",
+      "mode": "0644",
+      "uid": 0,
+      "gid": 0,
+      "size": 84,
+      "type": "file",
+      "sha256": "e5c4d55615ad54d530e7aaebcdd96df0af077f41fbbc8de40b0d3064c110c645"
+    },
+    {
+      "path": "dictionaries/dict6.txt",
+      "mode": "0644",
+      "uid": 0,
+      "gid": 0,
+      "size": 120,
+      "type": "file",
+      "sha256": "ea4922912db819ec55fc35df284f4789969a3d7218f6de5b7750876c2e8c28fa"
+    },
+    {
+      "path": "dictionaries/dict7.txt",
+      "mode": "0644",
+      "uid": 0,
+      "gid": 0,
+      "size": 132,
+      "type": "file",
+      "sha256": "f0fbabd60c27399d15e35b3baa50a2988ad4049ce3e7a7068df0a0bdf6e70a19"
+    },
+    {
+      "path": "dictionaries/dict8.txt",
+      "mode": "0644",
+      "uid": 0,
+      "gid": 0,
+      "size": 129,
+      "type": "file",
+      "sha256": "1ff2526e6f7561392e059dcb7508b2ad380994929145de147ee0582d457341b1"
+    },
+    {
+      "path": "dictionaries/dict9.txt",
+      "mode": "0644",
+      "uid": 0,
+      "gid": 0,
+      "size": 117,
+      "type": "file",
+      "sha256": "6a195372b5d7ae8408a9f9f4acd432ec6a8c4d22dc41d4bc52c9573ba2df4ced"
+    },
+    {
+      "path": "dictionaries/dicta.txt",
+      "mode": "0644",
+      "uid": 0,
+      "gid": 0,
+      "size": 118,
+      "type": "file",
+      "sha256": "d081a12ebe5d0729367ab1219f09aef56ff4628a1eb678db34bf40b939d6d4bb"
+    },
+    {
+      "path": "dictionaries/dictb.txt",
+      "mode": "0644",
+      "uid": 0,
+      "gid": 0,
+      "size": 112,
+      "type": "file",
+      "sha256": "b8b4cedb8bce15ba0a38d1fa6b9644052dc4342caf07e6546c718a81a7f7bc4f"
+    },
+    {
+      "path": "dictionaries/dictc.txt",
+      "mode": "0644",
+      "uid": 0,
+      "gid": 0,
+      "size": 109,
+      "type": "file",
+      "sha256": "efd775b2fb99035ef13463193cdcd96cef016128c9b91292bf4f2639bd7f5193"
+    },
+    {
+      "path": "dictionaries/dictd.txt",
+      "mode": "0644",
+      "uid": 0,
+      "gid": 0,
+      "size": 112,
+      "type": "file",
+      "sha256": "d54f5f6be019e05742db0eb37ce9e4fc4a28a104d91517df8187748d4b08366d"
+    },
+    {
+      "path": "dictionaries/dicte.txt",
+      "mode": "0644",
+      "uid": 0,
+      "gid": 0,
+      "size": 107,
+      "type": "file",
+      "sha256": "7f97ed3a9bed3e213bc8541f1a75732e35350b67bca2a488f95c8f370b05ea50"
+    },
+    {
+      "path": "dictionaries/dictf.txt",
+      "mode": "0644",
+      "uid": 0,
+      "gid": 0,
+      "size": 101,
+      "type": "file",
+      "sha256": "38411b0a821fda619db089e853a9bf1ceaa154fd18ffef2c87899c59d4bace95"
+    },
+    {
+      "path": "dictionaries/prev",
+      "mode": "0755",
+      "uid": 0,
+      "gid": 0,
+      "size": 0,
+      "type": "directory"
+    },
+    {
+      "path": "dictionaries/prev/README.txt",
+      "mode": "0644",
+      "uid": 0,
+      "gid": 0,
+      "size": 72,
+      "type": "file",
+      "sha256": "636c2ad73b61b8af82c2e9177b224150ed4544427bef9ea65fb0ac053829e16e"
+    },
+    {
+      "path": "dictionaries/prev/appliances.txt",
+      "mode": "0644",
+      "uid": 0,
+      "gid": 0,
+      "size": 174,
+      "type": "file",
+      "sha256": "461be13e91793b6606a9776f4b77d724d25dfcc66b4d8e60a0e8764a5977cedd"
+    },
+    {
+      "path": "dictionaries/prev/beerBrands.txt",
+      "mode": "0644",
+      "uid": 0,
+      "gid": 0,
+      "size": 161,
+      "type": "file",
+      "sha256": "5bb2b3f15bf558066e55a9023f45d908a08d2fa7a9e5365a27c197afffdb3e77"
+    },
+    {
+      "path": "dictionaries/prev/candy.txt",
+      "mode": "0644",
+      "uid": 0,
+      "gid": 0,
+      "size": 162,
+      "type": "file",
+      "sha256": "2c03ddd84127d4fc3dff965f15a30e302ab6ff90a424a16664712442a45ecda7"
+    },
+    {
+      "path": "dictionaries/prev/carBrands.txt",
+      "mode": "0644",
+      "uid": 0,
+      "gid": 0,
+      "size": 97,
+      "type": "file",
+      "sha256": "ac51c554c447ca7fd9ba03e7fca12af2e6f71a9b8fcbc39d3a693d5757e0c13d"
+    },
+    {
+      "path": "dictionaries/prev/cheese.txt",
+      "mode": "0644",
+      "uid": 0,
+      "gid": 0,
+      "size": 138,
+      "type": "file",
+      "sha256": "5d023f3cda31a59159c54d58910c224c2fb9fa9498f61a966aa3a74e206350b1"
+    },
+    {
+      "path": "dictionaries/prev/cities.txt",
+      "mode": "0644",
+      "uid": 0,
+      "gid": 0,
+      "size": 151,
+      "type": "file",
+      "sha256": "cb8e637730491058964a803ed3c68da658aee26bcf064d2decd4cfd7553f22a8"
+    },
+    {
+      "path": "dictionaries/prev/clothingBrands.txt",
+      "mode": "0644",
+      "uid": 0,
+      "gid": 0,
+      "size": 153,
+      "type": "file",
+      "sha256": "b63b92b9cbb2b00a3ccb9e598d7005d6bdeceea5c6369ccbd31f125ea1210358"
+    },
+    {
+      "path": "dictionaries/prev/countries.txt",
+      "mode": "0644",
+      "uid": 0,
+      "gid": 0,
+      "size": 134,
+      "type": "file",
+      "sha256": "502ca4b0b16fe8bf87ba5f3e13035a4adfff8d32d1e6e76d845e1b26f88de6ba"
+    },
+    {
+      "path": "dictionaries/prev/createdDirectoryDictionary.txt",
+      "mode": "0644",
+      "uid": 0,
+      "gid": 0,
+      "size": 32,
+      "type": "file",
+      "sha256": "2635861d9f7d463e8d320f6ce10ff88980894af7bb6e4f742306c1fb13d725a0"
+    },
+    {
+      "path": "dictionaries/prev/dogBreeds.txt",
+      "mode": "0644",
+      "uid": 0,
+      "gid": 0,
+      "size": 174,
+      "type": "file",
+      "sha256": "af343bff01dc953eb5c26c5b8c1d6390474e274b549bcb91019d95e0e49b8402"
+    },
+    {
+      "path": "dictionaries/prev/fastFood.txt",
+      "mode": "0644",
+      "uid": 0,
+      "gid": 0,
+      "size": 152,
+      "type": "file",
+      "sha256": "444d1cc7e5a99fb5f2a5827a53cb4a2860389218103893f70f11460a6ca98e76"
+    },
+    {
+      "path": "dictionaries/prev/fruits.txt",
+      "mode": "0644",
+      "uid": 0,
+      "gid": 0,
+      "size": 130,
+      "type": "file",
+      "sha256": "200ee31c6b6388ae073c60e65a0f6b41c1319f9dcc54cdb76060124ac11d91f3"
+    },
+    {
+      "path": "dictionaries/prev/instruments.txt",
+      "mode": "0644",
+      "uid": 0,
+      "gid": 0,
+      "size": 118,
+      "type": "file",
+      "sha256": "02cd4019f0bab25379bfd7e7343861fff0b40826538a26a895de585bb264335b"
+    },
+    {
+      "path": "dictionaries/prev/musicArtists.txt",
+      "mode": "0644",
+      "uid": 0,
+      "gid": 0,
+      "size": 171,
+      "type": "file",
+      "sha256": "0eed653759c6d34d466d9c7a019e01c1d039f37cb87ec0124edcc0a87829877b"
+    },
+    {
+      "path": "dictionaries/prev/og",
+      "mode": "0755",
+      "uid": 0,
+      "gid": 0,
+      "size": 0,
+      "type": "directory"
+    },
+    {
+      "path": "dictionaries/prev/og/dict0.txt",
+      "mode": "0644",
+      "uid": 0,
+      "gid": 0,
+      "size": 150,
+      "type": "file",
+      "sha256": "a6228528e7fb39bdf8a6422c559bcdc212f353f62ca6ce0bea92cb4571a5d280"
+    },
+    {
+      "path": "dictionaries/prev/og/dict1.txt",
+      "mode": "0644",
+      "uid": 0,
+      "gid": 0,
+      "size": 138,
+      "type": "file",
+      "sha256": "576dcccd9bf1b4d3fce6079cd0ab07e37fe74b07e54b6cf37ff0dec3404b8e44"
+    },
+    {
+      "path": "dictionaries/prev/og/dict2.txt",
+      "mode": "0644",
+      "uid": 0,
+      "gid": 0,
+      "size": 133,
+      "type": "file",
+      "sha256": "8183498c33ed573bba10705e71952abc242b6b9f25a21aa5d5f0e0922c96a7a5"
+    },
+    {
+      "path": "dictionaries/prev/og/dict3.txt",
+      "mode": "0644",
+      "uid": 0,
+      "gid": 0,
+      "size": 133,
+      "type": "file",
+      "sha256": "5b56e02504d5d8e3ba5067e6b1cdae8ab080431db40c9cf577ed04a9afa2a8f1"
+    },
+    {
+      "path": "dictionaries/prev/og/dict4.txt",
+      "mode": "0644",
+      "uid": 0,
+      "gid": 0,
+      "size": 97,
+      "type": "file",
+      "sha256": "ac51c554c447ca7fd9ba03e7fca12af2e6f71a9b8fcbc39d3a693d5757e0c13d"
+    },
+    {
+      "path": "dictionaries/prev/og/dict5.txt",
+      "mode": "0644",
+      "uid": 0,
+      "gid": 0,
+      "size": 136,
+      "type": "file",
+      "sha256": "01b8ac2d2f13a3607d070199003a8d81e91c8e7f60d18dbca1a874310a573688"
+    },
+    {
+      "path": "dictionaries/prev/og/dict6.txt",
+      "mode": "0644",
+      "uid": 0,
+      "gid": 0,
+      "size": 151,
+      "type": "file",
+      "sha256": "e388a5bd43cfd20b10447aeb0cdedb04b611d2e86f95cbfc2890509ff6740c3e"
+    },
+    {
+      "path": "dictionaries/prev/og/dict7.txt",
+      "mode": "0644",
+      "uid": 0,
+      "gid": 0,
+      "size": 151,
+      "type": "file",
+      "sha256": "1061e089e10a0ed501527fdf02f9decdd4725c1ad97c2c0aac563c5f7f6264e9"
+    },
+    {
+      "path": "dictionaries/prev/og/dict8.txt",
+      "mode": "0644",
+      "uid": 0,
+      "gid": 0,
+      "size": 124,
+      "type": "file",
+      "sha256": "4d7f40be1c64f53c1bbfbbd0efbf8a2dedcd0ffe6efb26ca16968ba790daa336"
+    },
+    {
+      "path": "dictionaries/prev/og/dict9.txt",
+      "mode": "0644",
+      "uid": 0,
+      "gid": 0,
+      "size": 143,
+      "type": "file",
+      "sha256": "c5993cea8ca47c46d7aeccccc70a2b7217006122e2dc90b9cbde457131d9a967"
+    },
+    {
+      "path": "dictionaries/prev/og/dicta.txt",
+      "mode": "0644",
+      "uid": 0,
+      "gid": 0,
+      "size": 152,
+      "type": "file",
+      "sha256": "826d4abff862fe30eea9933ee3c228c7228a4bc50229599b321b562ac7d21521"
+    },
+    {
+      "path": "dictionaries/prev/og/dictb.txt",
+      "mode": "0644",
+      "uid": 0,
+      "gid": 0,
+      "size": 124,
+      "type": "file",
+      "sha256": "97f37af4ddeb6a9a10af66d88bc047ad7125b9972ec45f8c1516244dd6a29072"
+    },
+    {
+      "path": "dictionaries/prev/og/dictc.txt",
+      "mode": "0644",
+      "uid": 0,
+      "gid": 0,
+      "size": 123,
+      "type": "file",
+      "sha256": "b626abe0e96944bc4ab42f764c69201d9982a9d8948e700619e0334eedfdd650"
+    },
+    {
+      "path": "dictionaries/prev/og/dictd.txt",
+      "mode": "0644",
+      "uid": 0,
+      "gid": 0,
+      "size": 131,
+      "type": "file",
+      "sha256": "51c46f1e135814a428b869e56c7b648418d98ce5c3a2e7bff16647b760e24942"
+    },
+    {
+      "path": "dictionaries/prev/og/dicte.txt",
+      "mode": "0644",
+      "uid": 0,
+      "gid": 0,
+      "size": 130,
+      "type": "file",
+      "sha256": "b8bc19439c6b58e81f9b3e9165bb5efc1d9e2cbe77c1607f226e0f0071e6c626"
+    },
+    {
+      "path": "dictionaries/prev/og/dictf.txt",
+      "mode": "0644",
+      "uid": 0,
+      "gid": 0,
+      "size": 123,
+      "type": "file",
+      "sha256": "e06d40e9188d113888750a6d57be704c3594f89cfc5e1be09dcda12420a45ef4"
+    },
+    {
+      "path": "dictionaries/prev/operatingSystems.txt",
+      "mode": "0644",
+      "uid": 0,
+      "gid": 0,
+      "size": 128,
+      "type": "file",
+      "sha256": "238a5ee2367720430d4c08e1dc7c6fb0c124681bc40ed87d1249efac089c506d"
+    },
+    {
+      "path": "dictionaries/prev/prev",
+      "mode": "0755",
+      "uid": 0,
+      "gid": 0,
+      "size": 0,
+      "type": "directory"
+    },
+    {
+      "path": "dictionaries/prev/prev/og",
+      "mode": "0755",
+      "uid": 0,
+      "gid": 0,
+      "size": 0,
+      "type": "directory"
+    },
+    {
+      "path": "dictionaries/prev/prev/og/airlines.txt",
+      "mode": "0644",
+      "uid": 0,
+      "gid": 0,
+      "size": 248,
+      "type": "file",
+      "sha256": "f00fb79bcc917cf48fd05087fa686603b762c5070cbc1fa29e986d323a445f31"
+    },
+    {
+      "path": "dictionaries/prev/seasonings.txt",
+      "mode": "0644",
+      "uid": 0,
+      "gid": 0,
+      "size": 142,
+      "type": "file",
+      "sha256": "334baf90db51f942e41f3f18579263e611c3d860683bc35b21f4eabfc3d2a91c"
+    },
+    {
+      "path": "dictionaries/prev/sports.txt",
+      "mode": "0644",
+      "uid": 0,
+      "gid": 0,
+      "size": 162,
+      "type": "file",
+      "sha256": "a446dbf199fbfbf53c8598eb296c75355fc42051f20c6e685d340c769e6a3eab"
+    },
+    {
+      "path": "fileManipulationSetup.sh",
+      "mode": "0755",
+      "uid": 0,
+      "gid": 0,
+      "size": 3494,
+      "type": "file",
+      "sha256": "aa9bfa276a20ccad48c76bec4b3ca176c97cffcb673de1af2f08656b351d1ea4"
+    },
+    {
+      "path": "install.sh",
+      "mode": "0755",
+      "uid": 0,
+      "gid": 0,
+      "size": 2879,
+      "type": "file",
+      "sha256": "1d1f63a00a7f8f1ab9e266574163e922a2eeec81cc1cff59c357e37732aee40d"
+    },
+    {
+      "path": "installbandit.sh",
+      "mode": "0755",
+      "uid": 0,
+      "gid": 0,
+      "size": 3356,
+      "type": "file",
+      "sha256": "6c77ed13cb495f9f029f09eea4d1ceeb7cf04e010568aaad719d1436d5dfecd8"
+    },
+    {
+      "path": "instructions.sh",
+      "mode": "0755",
+      "uid": 0,
+      "gid": 0,
+      "size": 1921,
+      "type": "file",
+      "sha256": "f35ab0332f51b1b810f17b421b72cc027a36813355c8afbe20fc595ddf5fb0f2"
+    },
+    {
+      "path": "level10FM.sh",
+      "mode": "0755",
+      "uid": 0,
+      "gid": 0,
+      "size": 8724,
+      "type": "file",
+      "sha256": "fd8b626ddc071e3c44bb4b474cc45e503bd141d426ea44d7db764801bb320436"
+    },
+    {
+      "path": "level11FM.sh",
+      "mode": "0755",
+      "uid": 0,
+      "gid": 0,
+      "size": 6343,
+      "type": "file",
+      "sha256": "60e0bbf17fb7b07a000904932108a023ed987526e5f91b7b4391ce9a8a723ad6"
+    },
+    {
+      "path": "level12FM.sh",
+      "mode": "0755",
+      "uid": 0,
+      "gid": 0,
+      "size": 6362,
+      "type": "file",
+      "sha256": "0f8af0eb7927bc587ef467816e71c7fe02eb281d00886c3dfa9965a80c585e72"
+    },
+    {
+      "path": "level13FM.sh",
+      "mode": "0755",
+      "uid": 0,
+      "gid": 0,
+      "size": 6429,
+      "type": "file",
+      "sha256": "2825be8c0a76d66600871ac211d92f697b4721562633399de39290cc5d2208a2"
+    },
+    {
+      "path": "level1FM.sh",
+      "mode": "0755",
+      "uid": 0,
+      "gid": 0,
+      "size": 4225,
+      "type": "file",
+      "sha256": "da5115b52bd31fdafa2afa63857a106c741bc37ee62aa3062ed7625a4deaac3d"
+    },
+    {
+      "path": "level2FM.sh",
+      "mode": "0755",
+      "uid": 0,
+      "gid": 0,
+      "size": 4276,
+      "type": "file",
+      "sha256": "719f304181598fb26b5af3c6fcf5d00064af49260cc85a5efd23792d3e1b2e75"
+    },
+    {
+      "path": "level3FM.sh",
+      "mode": "0755",
+      "uid": 0,
+      "gid": 0,
+      "size": 7012,
+      "type": "file",
+      "sha256": "6c8f98944d183bb446e342339ed46558251546f6158dd0634295e84d582be186"
+    },
+    {
+      "path": "level4FM.sh",
+      "mode": "0755",
+      "uid": 0,
+      "gid": 0,
+      "size": 7463,
+      "type": "file",
+      "sha256": "acd2fe9d7332bc33924f21a58ca9e1d8ac973113fd5725578721606f87ad8f04"
+    },
+    {
+      "path": "level5FM.sh",
+      "mode": "0755",
+      "uid": 0,
+      "gid": 0,
+      "size": 7326,
+      "type": "file",
+      "sha256": "75470de8af70541ad3433c73d79b97b4eed36bbf71bf918db53daf91249d0b10"
+    },
+    {
+      "path": "level6FM.sh",
+      "mode": "0755",
+      "uid": 0,
+      "gid": 0,
+      "size": 4794,
+      "type": "file",
+      "sha256": "f59d79835e7638f15f3064f434af872111587791a0d3eb306c7443b39317c052"
+    },
+    {
+      "path": "level7FM.sh",
+      "mode": "0755",
+      "uid": 0,
+      "gid": 0,
+      "size": 5119,
+      "type": "file",
+      "sha256": "380c57a765f116b566fd4b19d2739dc1de2fc99f4c7eedf5348e36e16ef3d388"
+    },
+    {
+      "path": "level8FM.sh",
+      "mode": "0755",
+      "uid": 0,
+      "gid": 0,
+      "size": 5525,
+      "type": "file",
+      "sha256": "56e1aa211a6ce56ad7bee0bbae7e15640ffd457c51116e62e4fadab97d8375aa"
+    },
+    {
+      "path": "level9FM.sh",
+      "mode": "0755",
+      "uid": 0,
+      "gid": 0,
+      "size": 9923,
+      "type": "file",
+      "sha256": "0b06f7de7af74fab4b67410e5db2ab4c36ec1801df6a0cb7498fafd26f4110ff"
+    },
+    {
+      "path": "masterArray.txt",
+      "mode": "0644",
+      "uid": 0,
+      "gid": 0,
+      "size": 2415,
+      "type": "file",
+      "sha256": "1bb22e7797aeec35e8c3d99775ee8b79f91850d925d872bb45975af97a134449"
+    },
+    {
+      "path": "nextlevel",
+      "mode": "0644",
+      "uid": 0,
+      "gid": 0,
+      "size": 471,
+      "type": "file",
+      "sha256": "87c286cfbef407d74dae8a661f4691dd73f7456ed3050b42004dba266f16e5d8"
+    },
+    {
+      "path": "polybandit3",
+      "mode": "0755",
+      "uid": 0,
+      "gid": 0,
+      "size": 0,
+      "type": "directory"
+    },
+    {
+      "path": "polybandit3/.gitattributes",
+      "mode": "0644",
+      "uid": 0,
+      "gid": 0,
+      "size": 66,
+      "type": "file",
+      "sha256": "1a1dbe176bc233b499d35a57db7513f2941c99ab9759f177830c9149be99005b"
+    },
+    {
+      "path": "prevlevel",
+      "mode": "0644",
+      "uid": 0,
+      "gid": 0,
+      "size": 543,
+      "type": "file",
+      "sha256": "fbc296cbb97ed407da60721eba0275ca903e6d3ad2976be292398b31efbb385a"
+    },
+    {
+      "path": "profile",
+      "mode": "0644",
+      "uid": 0,
+      "gid": 0,
+      "size": 604,
+      "type": "file",
+      "sha256": "33f28ec14537054811bb6c247b7a9a02c1b49d9280cfa33e1fd2816e25c04877"
+    },
+    {
+      "path": "resources.sh",
+      "mode": "0755",
+      "uid": 0,
+      "gid": 0,
+      "size": 4045,
+      "type": "file",
+      "sha256": "6a1315464b7cd19a163349a4d174f6b6696ceb3f76358064c95668b82a2fbcec"
+    },
+    {
+      "path": "test-orig.sh",
+      "mode": "0755",
+      "uid": 0,
+      "gid": 0,
+      "size": 980,
+      "type": "file",
+      "sha256": "adfb719b939388608186a8045fa001ccdad6efe6f043c2c5f5ace3d523e54d8a"
+    },
+    {
+      "path": "test.sh",
+      "mode": "0755",
+      "uid": 0,
+      "gid": 0,
+      "size": 978,
+      "type": "file",
+      "sha256": "8046a6edc2dc5f9f564e9a0a057003754f7f04f13248391e4e622b896ca66407"
+    },
+    {
+      "path": "test2.sh",
+      "mode": "0755",
+      "uid": 0,
+      "gid": 0,
+      "size": 972,
+      "type": "file",
+      "sha256": "dd2a96ddabe37bd7474ddfd558b0e58c033d23ac0030bbb54d61509a9b25ec72"
+    },
+    {
+      "path": "test3.sh",
+      "mode": "0755",
+      "uid": 0,
+      "gid": 0,
+      "size": 983,
+      "type": "file",
+      "sha256": "c5614bc0d85b9590887a3fc3d2b297c1462292f8fe36398762e26cac39e7ba2f"
+    },
+    {
+      "path": "verifyFM.sh",
+      "mode": "0755",
+      "uid": 0,
+      "gid": 0,
+      "size": 838,
+      "type": "file",
+      "sha256": "59a043ffd19618c9add2d3be444c9bdf3e050386168365e9c7acbecefcdbc61d"
+    },
+    {
+      "path": "words with hashes.txt",
+      "mode": "0644",
+      "uid": 0,
+      "gid": 0,
+      "size": 34478,
+      "type": "file",
+      "sha256": "fdfb232e9246f977a66aad2f99e1e8620a2eb9cf3ac249af82f68183a6f8bb37"
+    },
+    {
+      "path": "wordswithhashes.txt",
+      "mode": "0644",
+      "uid": 0,
+      "gid": 0,
+      "size": 33477,
+      "type": "file",
+      "sha256": "76999730bdf221437a32abc45f3ccc30df0f523aca36b454bf5117c3cb450933"
+    }
+  ]
+}

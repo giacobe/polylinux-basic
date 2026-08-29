@@ -1,0 +1,16 @@
+shirt
+pants
+jacket
+coat
+sweater
+hoodie
+jeans
+shorts
+socks
+shoes
+boots
+sandals
+belt
+gloves
+scarf
+sweatshirt
