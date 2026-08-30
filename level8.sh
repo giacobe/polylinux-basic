@@ -1,8 +1,8 @@
 #!/bin/sh
 
 #set and confirm inputs
-#levelPassword="basic9password"
-#levelToBuild="basic9"
+#levelPassword="level8password"
+#levelToBuild="level8"
 #readMeLocation=$levelToBuild"/README.txt"
 
 #level_HASH=$(echo -n "$USER_ID$currentDate$newPass$levelPassword" | sha256sum | grep -o '^\S\+')
@@ -85,27 +85,25 @@ do
     then
 		#this is the signal file that has the correct value in it.
         filename="inhere.txt"
-		#echo $level_HASH | base64 | head -n 1 | cut -c 1-8 > $levelToBuild/$line/$filename
+		#echo $level_HASH | base64 | cut -c 1-8 > $levelToBuild/$line/$filename
 		secretfilenameextension=$(echo $level_HASH | base64 | tr -d "\r\n" | cut -c 1-8)
-		filenamehash=$(echo -n $filename"-"$secretfilenameextension | sha256sum | grep -o '^\S\+')
-		filenameextension=$(echo $filenamehash | base64 | tr -d "\r\n" | cut -c 1-8)
-		mkdir $levelToBuild/$secretfilename"-"$filenameextension
-		echo "These are the codes you are looking for !!!" > $levelToBuild/$secretfilename"-"$secretfilenameextension".txt"
+		mkdir $levelToBuild/$secretfilename"-"$secretfilenameextension
+		echo "These are the codes you are looking for !!!" > $levelToBuild/$secretfilename"-"$secretfilenameextension/$filename
 	else
 		#this is the noise file
 		filename=$line
-		filenamehash=$(echo -n $filename | md5sum | grep -o '^\S\+')
+		filenamehash=$(echo -n $filename | sha256sum | grep -o '^\S\+')
 		filenameextension=$(echo $filenamehash | base64 | tr -d "\r\n" | cut -c 1-8)
-		dirnameextension=$(echo $filenamehash | base64 | tr -d "\r\n"  | cut -c 9-16)
-		mkdir $levelToBuild/$line"-"$dirnameextension
-		echo "These are not the codes you are looking for" > $levelToBuild/$line"-"$filenameextension".txt"
+		mkdir $levelToBuild/$line"-"$filenameextension
+		echo "These are not the codes you are looking for" > $levelToBuild/$line"-"$filenameextension/$filename".txt"
     fi
 	i=`expr $i + 1`
 done < "$inputFile"
 
 echo "* Figure out the code. It is part of  *" >> $readMeLocation
-echo "* the name of a file that is different*" >> $readMeLocation
-echo "* from the names of other files. The  *" >> $readMeLocation
-echo "* code is not in the name of the      *" >> $readMeLocation
-echo "* directory.                          *" >> $readMeLocation
+echo "* the name of a directory. The code is*" >> $readMeLocation
+echo "* the characters that follow the dash *" >> $readMeLocation
+echo "* in the directory name. The code is a*" >> $readMeLocation
+echo "* directory name that is different    *" >> $readMeLocation
+echo "* than the other directory names.     *" >> $readMeLocation
 echo "***************************************" >> $readMeLocation

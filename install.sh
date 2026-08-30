@@ -1,83 +1,64 @@
 #!/bin/sh
+set -eu
 
-# Set Passwords for the system and for each level
-export SYSTEM_PASSWORD="systemPassword"
-levelPasswordRoot="levelPassword"
+cd "$(dirname "$0")"
+INSTALL_ROOT=$(pwd)
+LAB_ID='polylinux-basic'
+LAB_TITLE='Basic Linux Commands'
+SYSTEM_PASSWORD=${SYSTEM_PASSWORD:-systemPassword}
+LEVEL_PASSWORD_ROOT=${LEVEL_PASSWORD_ROOT:-levelPassword}
+currentDate=${CURRENT_DATE:-$(date +%Y-%m-%d)}
+export INSTALL_ROOT LAB_ID LAB_TITLE SYSTEM_PASSWORD LEVEL_PASSWORD_ROOT currentDate
 
-# Eventually, we want this script to autorun from the /root user and prevent the participant from breaking out of it with <ctrl> C
-#trap ' ' 2 20
+. "$INSTALL_ROOT/resources.sh"
+. "$INSTALL_ROOT/polylinux-common.sh"
 
-# This sets the date/time correctly from the host system's date/time
-export currentDate=$(date +"%m-%d-%Y" | head -n 1)
-
-# Read the username from the keyboard.
-# eventually, we need to do some validation that this at least looks like an email address
-#export USER_ID=""
-#echo "Enter your PSU email (xyz1234@psu.edu): "
-#read USER_ID
-
-confirmation="no"
-while [[ "$confirmation" != "y" ]]
-        do
-                export USER_ID=""
-                echo "Enter your email address (e.g. xyz1234@psu.edu): "
-                read USER_ID
-                read -p "Is $USER_ID your email address? (y/n)" confirmation
-        done
-
-export USER_HASH=$(echo -n "$USER_ID" | md5sum)
-#not sure we need this
-#echo -n "$USER_HASH" > userHash.txt
-
-#set up the limited user accounts on the linux system that the end-user will be playing the game from
-#set up the directories that are missing
-mkdir /home
-cp profile /etc
-
-#create nextlevel and prevlevel commands to move between levels easily
-cp nextlevel /usr/bin
-cp prevlevel /usr/bin
-chmod 755 /usr/bin/nextlevel
-chmod 755 /usr/bin/prevlevel
-
-#set the directory where the script is running from, so we can return to this location after each level's install script runs
-export origInstallDir=$(pwd)
-
-# Call each level's install script
-
-echo -n Building 10 levels [
-for levelnumber in 1 2 3 4 5 6 7 8 9 10
-do
-	# set our variables
-		levelsetname="basic"
-		#echo building $levelsetname
-		echo -n $levelnumber
-		export levelToBuild=$levelsetname$levelnumber
-		newPass=$levelPasswordRoot$levelnumber
-		export level_HASH=$(echo -n "$USER_ID$currentDate$SYSTEM_PASSWORD$newPass" | sha256sum | grep -o '^\S\+')
-		export readMeLocation=$levelToBuild"/README.txt"
-	#create level user account
-		adduser -D -g "User" $levelToBuild
-	#create the directory and set the password (to nothing) for the user's account
-		passwd -d $levelToBuild > /dev/null 2>1&
-	## Create the README.txt file
-		echo "* Create date: " $currentDate > /home/$readMeLocation
-		echo "* User       : " $USER_ID >> /home/$readMeLocation
-		echo "***************************************" >> /home/$readMeLocation
-		echo "* Instructions for this level:        *" >> /home/$readMeLocation
-	#launch the level's build script
-		./$levelsetname$levelnumber.sh&
-	#set the permissions on the files in the home directory correctly
-		chown -R $levelToBuild:$levelToBuild /home/$levelToBuild
-		chmod -R o-rx /home/$levelToBuild
-	#return to the original installation directory
-		cd $origInstallDir
-	#get rid of our build script
-	#rm $levelsetname$levelnumber.sh
+NON_INTERACTIVE=0
+NO_LOGIN=0
+for arg in "$@"; do
+    case "$arg" in
+        --non-interactive) NON_INTERACTIVE=1 ;;
+        --no-login) NO_LOGIN=1 ;;
+        *) die "unknown option: $arg" ;;
+    esac
 done
-echo ]
-echo done
 
-#rm setup.sh
-clear
-su -l basic1
+if [ "$NON_INTERACTIVE" -eq 1 ]; then
+    raw_user=${USER_ID:-student@example.edu}
+else
+    confirmation=n
+    while [ "$confirmation" != y ]; do
+        printf 'Enter your email address: '
+        IFS= read -r raw_user
+        normalized=$(normalize_email "$raw_user")
+        validate_email "$normalized" || { echo 'That address is not valid.' >&2; continue; }
+        printf 'The exercise will use %s. Is that correct? (y/n) ' "$normalized"
+        IFS= read -r confirmation
+    done
+fi
+USER_ID=$(normalize_email "$raw_user")
+validate_email "$USER_ID" || die 'invalid email address after normalization'
+validate_iso_date "$currentDate" || die 'CURRENT_DATE must be YYYY-MM-DD'
+EXERCISE_CODE=$(exercise_code_from_date "$currentDate")
+export USER_ID EXERCISE_CODE
+select_theme
+THEME_OFFSET=$THEME_INDEX
+THEME_STEP=0
+export THEME_OFFSET THEME_STEP
+
+for cmd in adduser awk base64 cat chmod chown cp cut date find grep head id mkdir mv passwd printf rm sed sha256sum sleep sort su tail touch tr uniq wc; do command_required "$cmd"; done
+
+mkdir -p /home
+LEGACY_DIRECT=1
+export LEGACY_DIRECT
+
+cp "$INSTALL_ROOT/profile" /etc/profile
+for helper in nextlevel prevlevel; do
+    cp "$INSTALL_ROOT/$helper" "/usr/bin/$helper"
+    chmod 755 "/usr/bin/$helper"
+done
+
+. "$INSTALL_ROOT/polylinux-parallel-runtime.sh"
+prepare_standard_accounts
+echo "Exercise code: $EXERCISE_CODE"
+start_standard_levels

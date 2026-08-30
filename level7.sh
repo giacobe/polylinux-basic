@@ -1,8 +1,8 @@
 #!/bin/sh
 
 #set and confirm inputs
-#levelPassword="basic6password"
-#levelToBuild="basic6"
+#levelPassword="level7password"
+#levelToBuild="level7"
 #readMeLocation=$levelToBuild"/README.txt"
 
 #level_HASH=$(echo -n "$USER_ID$currentDate$newPass$levelPassword" | sha256sum | grep -o '^\S\+')
@@ -85,24 +85,21 @@ do
     then
 		#this is the signal file that has the correct value in it.
         filename="inhere.txt"
-		mkdir $levelToBuild/$line
-		echo $level_HASH | base64 | tr -d "\r\n" | cut -c 1-8 > $levelToBuild/$line/$filename
+		secretfilenameextension=$(echo $level_HASH | base64 | tr -d "\r\n" | cut -c 1-8)
+		mkdir $levelToBuild/$line"-"$secretfilenameextension
+		#echo $level_HASH | base64 | cut -c 1-8 > $levelToBuild/$line/$filename
 	else
 		#this is the noise file
 		filename="notinhere.txt"
 		filenamehash=$(echo -n $filename | md5sum | grep -o '^\S\+')
 		mkdir $levelToBuild/$line
-		echo $filenamehash | base64 | tr -d "\r\n" | cut -c 1-8 > $levelToBuild/$line/$filename
+		#echo $filenamehash | base64 -w 0 | cut -c 1-8 > $levelToBuild/$line/$filename
     fi
 	i=`expr $i + 1`
 done < "$inputFile"
 
-echo "* Find the one file called inhere.txt *" >> $readMeLocation
-echo "* It's in one of the directories, but *" >> $readMeLocation
-echo "* there is no way to figure out which *" >> $readMeLocation
-echo "* one. The contents of the file will  *" >> $readMeLocation
-echo "* be the password for this level. You *" >> $readMeLocation
-echo "* are really going to have to use     *" >> $readMeLocation
-echo "* 'find' to get this one unless you   *" >> $readMeLocation
-echo "* examine every single directory.     *" >> $readMeLocation
+echo "* Figure out the code. It is part of  *" >> $readMeLocation
+echo "* the name of a directory. The code is*" >> $readMeLocation
+echo "* the characters that follow the dash *" >> $readMeLocation
+echo "* in the directory name.              *" >> $readMeLocation
 echo "***************************************" >> $readMeLocation

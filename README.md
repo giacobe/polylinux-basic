@@ -14,7 +14,7 @@ See `PROVENANCE.md` before modifying or repackaging the exercise.
 ## Repository contents
 
 - `install.sh` installs the recovered lab in a compatible PolyLinux guest.
-- `basic1.sh` through `basic10.sh` generate the ten learner levels.
+- `level1.sh` through `level10.sh` generate the ten learner levels.
 - `dictionaries/` contains the word data used by the generators.
 - `participant-guide.md` preserves the public instructions.
 - `provenance/RECOVERY-MANIFEST.json` records the recovered `/root` inventory.
@@ -47,3 +47,9 @@ scripts/03-package-payload.sh \
 Replace `<timestamp>` with the directory created by stage 2. Before publishing,
 review the generated manifest and boot-test the exact `.bzImage` and
 `.rootfs.cpio.gz` pair in v86. Do not commit those generated images here.
+
+## Standard runtime contract
+
+The current release uses the reversible PolyBandit exercise code, the versioned `seed-v1` deterministic seed, ten concurrent level generators, staged `README.txt` readiness, unrestricted `nextlevel`/`prevlevel` navigation, and no client-side answer store or checker. See `lab.json` for the authoritative level count, theme policy, Buildroot configuration, and browser artifact names.
+
+Do not rebuild the assigned Buildroot baseline merely to package this lab. Package the repository payload into the configuration named by `buildroot_configuration`, preserve the baseline kernel, and publish the resulting `packaged.bzImage` and `packaged.rootfs.cpio.gz`.

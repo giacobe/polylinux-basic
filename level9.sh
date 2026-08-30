@@ -1,8 +1,8 @@
 #!/bin/sh
 
 #set and confirm inputs
-#levelPassword="basic5password"
-#levelToBuild="basic5"
+#levelPassword="level9password"
+#levelToBuild="level9"
 #readMeLocation=$levelToBuild"/README.txt"
 
 #level_HASH=$(echo -n "$USER_ID$currentDate$newPass$levelPassword" | sha256sum | grep -o '^\S\+')
@@ -81,24 +81,31 @@ done
 i=0
 while read -r line
 do
-	if [[ $i -eq $secretfilelocation ]]
+    if [[ $i -eq $secretfilelocation ]]
     then
 		#this is the signal file that has the correct value in it.
         filename="inhere.txt"
-		mkdir $levelToBuild/$secretfilename
-		echo $level_HASH | base64 | tr -d "\r\n" | cut -c 1-8 > $levelToBuild/$secretfilename/$filename
+		#echo $level_HASH | base64 | head -n 1 | cut -c 1-8 > $levelToBuild/$line/$filename
+		secretfilenameextension=$(echo $level_HASH | base64 | tr -d "\r\n" | cut -c 1-8)
+		filenamehash=$(echo -n $filename"-"$secretfilenameextension | sha256sum | grep -o '^\S\+')
+		filenameextension=$(echo $filenamehash | base64 | tr -d "\r\n" | cut -c 1-8)
+		mkdir $levelToBuild/$secretfilename"-"$filenameextension
+		echo "These are the codes you are looking for !!!" > $levelToBuild/$secretfilename"-"$secretfilenameextension".txt"
 	else
 		#this is the noise file
-		filename="notinhere.txt"
+		filename=$line
 		filenamehash=$(echo -n $filename | md5sum | grep -o '^\S\+')
-		mkdir $levelToBuild/$line
-		echo $filenamehash | base64 | tr -d "\r\n" | cut -c 1-8 > $levelToBuild/$line/$filename
+		filenameextension=$(echo $filenamehash | base64 | tr -d "\r\n" | cut -c 1-8)
+		dirnameextension=$(echo $filenamehash | base64 | tr -d "\r\n"  | cut -c 9-16)
+		mkdir $levelToBuild/$line"-"$dirnameextension
+		echo "These are not the codes you are looking for" > $levelToBuild/$line"-"$filenameextension".txt"
     fi
 	i=`expr $i + 1`
-done < $inputFile
-echo "* Find the one file called inhere.txt *" >> $readMeLocation
-echo "* It's in the directory that is named *" >> $readMeLocation
-echo "* differently than the others. The    *" >> $readMeLocation
-echo "* contents of the file will be the    *" >> $readMeLocation
-echo "* password for this level.            *" >> $readMeLocation
+done < "$inputFile"
+
+echo "* Figure out the code. It is part of  *" >> $readMeLocation
+echo "* the name of a file that is different*" >> $readMeLocation
+echo "* from the names of other files. The  *" >> $readMeLocation
+echo "* code is not in the name of the      *" >> $readMeLocation
+echo "* directory.                          *" >> $readMeLocation
 echo "***************************************" >> $readMeLocation

@@ -1,8 +1,8 @@
 #!/bin/sh
 
 #set and confirm inputs
-#levelPassword="basic7password"
-#levelToBuild="basic7"
+#levelPassword="level5password"
+#levelToBuild="level5"
 #readMeLocation=$levelToBuild"/README.txt"
 
 #level_HASH=$(echo -n "$USER_ID$currentDate$newPass$levelPassword" | sha256sum | grep -o '^\S\+')
@@ -81,25 +81,24 @@ done
 i=0
 while read -r line
 do
-    if [[ $i -eq $secretfilelocation ]]
+	if [[ $i -eq $secretfilelocation ]]
     then
 		#this is the signal file that has the correct value in it.
         filename="inhere.txt"
-		secretfilenameextension=$(echo $level_HASH | base64 | tr -d "\r\n" | cut -c 1-8)
-		mkdir $levelToBuild/$line"-"$secretfilenameextension
-		#echo $level_HASH | base64 | cut -c 1-8 > $levelToBuild/$line/$filename
+		mkdir $levelToBuild/$secretfilename
+		echo $level_HASH | base64 | tr -d "\r\n" | cut -c 1-8 > $levelToBuild/$secretfilename/$filename
 	else
 		#this is the noise file
 		filename="notinhere.txt"
 		filenamehash=$(echo -n $filename | md5sum | grep -o '^\S\+')
 		mkdir $levelToBuild/$line
-		#echo $filenamehash | base64 -w 0 | cut -c 1-8 > $levelToBuild/$line/$filename
+		echo $filenamehash | base64 | tr -d "\r\n" | cut -c 1-8 > $levelToBuild/$line/$filename
     fi
 	i=`expr $i + 1`
-done < "$inputFile"
-
-echo "* Figure out the code. It is part of  *" >> $readMeLocation
-echo "* the name of a directory. The code is*" >> $readMeLocation
-echo "* the characters that follow the dash *" >> $readMeLocation
-echo "* in the directory name.              *" >> $readMeLocation
+done < $inputFile
+echo "* Find the one file called inhere.txt *" >> $readMeLocation
+echo "* It's in the directory that is named *" >> $readMeLocation
+echo "* differently than the others. The    *" >> $readMeLocation
+echo "* contents of the file will be the    *" >> $readMeLocation
+echo "* password for this level.            *" >> $readMeLocation
 echo "***************************************" >> $readMeLocation

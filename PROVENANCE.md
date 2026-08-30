@@ -7,8 +7,8 @@
 - Recovered boundary: `/root`
 
 The live `/root` contained Basic, Bandit, and historical file-manipulation
-material. This repository includes only the Basic installer, `basic1.sh` through
-`basic10.sh`, their dictionaries, and direct runtime helpers. Unrelated exercises
+material. This repository includes only the Basic installer, `level1.sh` through
+`level10.sh`, their dictionaries, and direct runtime helpers. Unrelated exercises
 were deliberately excluded.
 
 The 15 assessed Basic installer/generator/navigation files matched the historical
