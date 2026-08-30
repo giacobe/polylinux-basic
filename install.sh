@@ -3,12 +3,13 @@ set -eu
 
 cd "$(dirname "$0")"
 INSTALL_ROOT=$(pwd)
+origInstallDir=$INSTALL_ROOT
 LAB_ID='polylinux-basic'
 LAB_TITLE='Basic Linux Commands'
 SYSTEM_PASSWORD=${SYSTEM_PASSWORD:-systemPassword}
 LEVEL_PASSWORD_ROOT=${LEVEL_PASSWORD_ROOT:-levelPassword}
 currentDate=${CURRENT_DATE:-$(date +%Y-%m-%d)}
-export INSTALL_ROOT LAB_ID LAB_TITLE SYSTEM_PASSWORD LEVEL_PASSWORD_ROOT currentDate
+export INSTALL_ROOT origInstallDir LAB_ID LAB_TITLE SYSTEM_PASSWORD LEVEL_PASSWORD_ROOT currentDate
 
 . "$INSTALL_ROOT/resources.sh"
 . "$INSTALL_ROOT/polylinux-common.sh"
