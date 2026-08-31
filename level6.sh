@@ -101,7 +101,7 @@ echo "* Find the one file called inhere.txt *" >> $readMeLocation
 echo "* It's in one of the directories, but *" >> $readMeLocation
 echo "* there is no way to figure out which *" >> $readMeLocation
 echo "* one. The contents of the file will  *" >> $readMeLocation
-echo "* be the password for this level. You *" >> $readMeLocation
+echo "* be the answer for this level. You   *" >> $readMeLocation
 echo "* are really going to have to use     *" >> $readMeLocation
 echo "* 'find' to get this one unless you   *" >> $readMeLocation
 echo "* examine every single directory.     *" >> $readMeLocation

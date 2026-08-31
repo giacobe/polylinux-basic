@@ -1,11 +1,12 @@
 #!/bin/sh
 PS1='\W$ '
-cd ~
+cd "$HOME" || exit 1
 clear
-echo "********************************************************************************"
-echo "*  Welcome to The PolyLinux Game. Follow the instructions in the README.txt    *"
-echo "*  file to figure out the flag to complete the level.                          *"
-echo "*  To change to the next level, issue the command 'nextlevel'.                 *"
-echo "*  To change to the previous level, issue the command 'prevlevel'.             *"
-echo "********************************************************************************"
+box_line() { printf '* %-36.36s *\n' "$1"; }
+echo '****************************************'
+box_line 'PolyLinux: Basic Linux Commands'
+box_line 'Read README.txt to begin.'
+box_line 'Use the exercise grading form.'
+box_line 'Use nextlevel and prevlevel.'
+echo '****************************************'
 cat README.txt

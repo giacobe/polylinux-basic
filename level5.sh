@@ -100,5 +100,5 @@ echo "* Find the one file called inhere.txt *" >> $readMeLocation
 echo "* It's in the directory that is named *" >> $readMeLocation
 echo "* differently than the others. The    *" >> $readMeLocation
 echo "* contents of the file will be the    *" >> $readMeLocation
-echo "* password for this level.            *" >> $readMeLocation
+echo "* answer for this level.              *" >> $readMeLocation
 echo "***************************************" >> $readMeLocation

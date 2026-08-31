@@ -48,6 +48,6 @@ done < "$inputFile"
 echo $level_HASH | base64 | tr -d "\r\n" | cut -c 1-8 > $levelToBuild/$filename
 
 echo "* One of the files in this directory  *" >> $readMeLocation
-echo "* has the password for this level     *" >> $readMeLocation
+echo "* has the answer for this level       *" >> $readMeLocation
 echo "* Hint: It isn't README.txt           *" >>$readMeLocation
 echo "***************************************" >> $readMeLocation
