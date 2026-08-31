@@ -29,7 +29,7 @@ for hexdigit in 0 1 2 3 4 5 6 7 8 9 a b c d e f; do
 done
 
 # Select signal dictionary
-signalDict="$origInstallDir/dictionaries/dict${firstChar}.txt"
+signalDict="$THEME_DICTIONARY_ROOT/dict${firstChar}.txt"
 [ -f "$signalDict" ] || {
   echo "Missing dictionary: $signalDict"
   exit 1
@@ -59,7 +59,7 @@ if [ "$thirdChar" = "$firstChar" ]; then
   noisefile=$(echo "$hex" | cut -c"$index")
 fi
 
-noiseDict="$origInstallDir/dictionaries/dict${noisefile}.txt"
+noiseDict="$THEME_DICTIONARY_ROOT/dict${noisefile}.txt"
 [ -f "$noiseDict" ] || {
   echo "Missing dictionary: $noiseDict"
   exit 1

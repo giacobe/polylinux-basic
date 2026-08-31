@@ -45,7 +45,9 @@ export USER_ID EXERCISE_CODE
 select_theme
 THEME_OFFSET=$THEME_INDEX
 THEME_STEP=0
-export THEME_OFFSET THEME_STEP
+THEME_DICTIONARY_ROOT=/run/polylinux/$LAB_ID/theme-dictionaries
+export THEME_OFFSET THEME_STEP THEME_DICTIONARY_ROOT
+prepare_theme_dictionaries "$THEME_DICTIONARY_ROOT"
 
 for cmd in adduser awk base64 cat chmod chown cp cut date find grep head id mkdir mv passwd printf rm sed sha256sum sleep sort su tail touch tr uniq wc; do command_required "$cmd"; done
 

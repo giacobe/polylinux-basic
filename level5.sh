@@ -19,7 +19,7 @@ fourthChar=${level_HASH:4:1}
 
 #select the dictionary to be used from the first characater in the level_HASH
 
-inputFile=$origInstallDir"/dictionaries/dict"$firstChar".txt"
+inputFile=$THEME_DICTIONARY_ROOT"/dict"$firstChar".txt"
 
 #select the item from the dictionary to be used as the filename
 #first, convert the hex to binary, and pull that nth item from the list, save it as "selectedItem"
@@ -66,7 +66,7 @@ for hexdigit in $hexdigits; do
         fi
 done
 
-inputFile=$origInstallDir"/dictionaries/dict"$noisefile".txt"
+inputFile=$THEME_DICTIONARY_ROOT"/dict"$noisefile".txt"
 
 #determine which order to create the noise file in.
 i=0

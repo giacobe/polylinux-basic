@@ -14,7 +14,7 @@ cd /home
 #select the dictionary to be used from the first characater in the level_HASH
 
 firstChar=${level_HASH::1}
-inputFile=$origInstallDir"/dictionaries/dict"$firstChar".txt"
+inputFile=$THEME_DICTIONARY_ROOT"/dict"$firstChar".txt"
 
 #select the item from the dictionary to be used from the second caracter in the leve_HASH
 
