@@ -1,6 +1,5 @@
 #!/bin/sh
 set -eu
-
 cd "$(dirname "$0")"
 INSTALL_ROOT=$(pwd)
 origInstallDir=$INSTALL_ROOT
@@ -10,10 +9,8 @@ SYSTEM_PASSWORD=${SYSTEM_PASSWORD:-systemPassword}
 LEVEL_PASSWORD_ROOT=${LEVEL_PASSWORD_ROOT:-levelPassword}
 currentDate=${CURRENT_DATE:-$(date +%Y-%m-%d)}
 export INSTALL_ROOT origInstallDir LAB_ID LAB_TITLE SYSTEM_PASSWORD LEVEL_PASSWORD_ROOT currentDate
-
 . "$INSTALL_ROOT/resources.sh"
 . "$INSTALL_ROOT/polylinux-common.sh"
-
 NON_INTERACTIVE=0
 NO_LOGIN=0
 for arg in "$@"; do
@@ -23,7 +20,6 @@ for arg in "$@"; do
         *) die "unknown option: $arg" ;;
     esac
 done
-
 if [ "$NON_INTERACTIVE" -eq 1 ]; then
     raw_user=${USER_ID:-student@example.edu}
 else
@@ -43,24 +39,22 @@ validate_iso_date "$currentDate" || die 'CURRENT_DATE must be YYYY-MM-DD'
 EXERCISE_CODE=$(exercise_code_from_date "$currentDate")
 export USER_ID EXERCISE_CODE
 select_theme
+THEME_HEX=$(printf '%x' "$THEME_INDEX")
+export THEME_HEX
 THEME_OFFSET=$THEME_INDEX
 THEME_STEP=0
 THEME_DICTIONARY_ROOT=/run/polylinux/$LAB_ID/theme-dictionaries
 export THEME_OFFSET THEME_STEP THEME_DICTIONARY_ROOT
 prepare_theme_dictionaries "$THEME_DICTIONARY_ROOT"
-
 for cmd in adduser awk base64 cat chmod chown cp cut date find grep head id mkdir mv passwd printf rm sed sha256sum sleep sort su tail touch tr uniq wc; do command_required "$cmd"; done
-
 mkdir -p /home
 LEGACY_DIRECT=1
 export LEGACY_DIRECT
-
 cp "$INSTALL_ROOT/profile" /etc/profile
 for helper in nextlevel prevlevel; do
     cp "$INSTALL_ROOT/$helper" "/usr/bin/$helper"
     chmod 755 "/usr/bin/$helper"
 done
-
 . "$INSTALL_ROOT/polylinux-parallel-runtime.sh"
 prepare_standard_accounts
 echo "Exercise code: $EXERCISE_CODE"

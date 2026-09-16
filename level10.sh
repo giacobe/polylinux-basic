@@ -1,27 +1,18 @@
 #!/bin/sh
-
 #set and confirm inputs
 #levelPassword="level10password"
 #levelToBuild="level10"
 #readMeLocation=$levelToBuild"/README.txt"
-
 #level_HASH=$(echo -n "$USER_ID$currentDate$newPass$levelPassword" | sha256sum | grep -o '^\S\+')
-
 ## create static directories
 cd /home
 #mkdir $levelToBuild
-
 #select the dictionary to be used from the first characater in the level_HASH
-
 firstChar=${level_HASH::1}
 inputFile=$THEME_DICTIONARY_ROOT"/dict"$firstChar".txt"
-
 #select the item from the dictionary to be used from the second caracter in the leve_HASH
-
 secondChar=${level_HASH:2:1}
-
 #Convert the hex to binary, and pull that nth item from the list, save it as "selectedItem"
-
 hexdigits='0 1 2 3 4 5 6 7 8 9 a b c d e f'
 i=0
 for hexdigit in $hexdigits; do
@@ -30,9 +21,7 @@ for hexdigit in $hexdigits; do
 	fi
 	i=`expr $i + 1`
 done
-
 #create the filename with the nth value from the list
-
 i=0
 while read -r line
 do
@@ -42,12 +31,10 @@ do
         fi
         i=`expr $i + 1`
 done < "$inputFile"
-
 #save the code in the filename
 filename=$(echo $level_HASH | base64 | tr -d "\r\n" | cut -c 1-8)
 echo "This is the right file. The code is the file name" > $levelToBuild/$filename".txt"
 echo "You might need this, too:"$value >> $levelToBuild/$filename".txt"
-
 echo "* The code is the filename of the .txt*" >> $readMeLocation
 echo "* (ignore the README.txt). The code   *" >> $readMeLocation
 echo "* does not include '.txt'             *" >> $readMeLocation

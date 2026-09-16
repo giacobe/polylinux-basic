@@ -1,0 +1,16 @@
+barrel
+basket
+bottle
+box
+bucket
+canister
+carton
+case
+crate
+envelope
+jar
+pouch
+suitcase
+tank
+tube
+vial

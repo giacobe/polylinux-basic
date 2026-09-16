@@ -1,0 +1,16 @@
+airport
+arena
+courthouse
+factory
+firehouse
+greenhouse
+hospital
+hotel
+library
+museum
+observatory
+restaurant
+schoolhouse
+stadium
+theater
+warehouse

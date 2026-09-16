@@ -1,0 +1,16 @@
+accountant
+architect
+carpenter
+chef
+dentist
+driver
+engineer
+farmer
+librarian
+nurse
+painter
+pharmacist
+pilot
+professor
+student
+translator

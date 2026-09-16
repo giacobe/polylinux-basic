@@ -1,0 +1,16 @@
+bamboo
+cactus
+cedar
+daisy
+fern
+lavender
+maple
+orchid
+palm
+pine
+rose
+sunflower
+tulip
+vine
+willow
+yucca

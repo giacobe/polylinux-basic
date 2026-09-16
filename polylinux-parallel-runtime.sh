@@ -1,19 +1,16 @@
 #!/bin/sh
 # Shared account preparation and parallel level construction for ten-level labs.
-
 MAX_PARALLEL=${MAX_PARALLEL:-10}
 case "$MAX_PARALLEL" in
     1|2|3|4|5|6|7|8|9|10) ;;
     *) poly_die 'MAX_PARALLEL must be between 1 and 10' ;;
 esac
-
 STATUS_ROOT=${STATUS_ROOT:-/run/polylinux/$LAB_ID}
 READY_DIR=$STATUS_ROOT/ready
 FAILED_DIR=$STATUS_ROOT/failed
 BUILD_LOG=${BUILD_LOG:-/var/log/$LAB_ID-build.log}
 HOME_ROOT=${HOME_ROOT:-/home}
 export STATUS_ROOT READY_DIR FAILED_DIR BUILD_LOG HOME_ROOT
-
 prepare_standard_accounts() {
     mkdir -p "$HOME_ROOT" "$READY_DIR" "$FAILED_DIR"
     chmod 755 "$STATUS_ROOT" "$READY_DIR" "$FAILED_DIR"
@@ -41,7 +38,6 @@ prepare_standard_accounts() {
         levelnumber=$((levelnumber + 1))
     done
 }
-
 build_standard_level() (
     levelnumber=$1
     levelToBuild="level$levelnumber"
@@ -77,7 +73,6 @@ build_standard_level() (
                 echo "PolyLinux: $LAB_TITLE"
                 echo "Participant: $USER_ID"
                 echo "Exercise code: $EXERCISE_CODE"
-                echo "Theme: $(theme_field title)"
                 echo '__POLYLINUX_DIVIDER__'
                 # Some predecessor generators wrote their own metadata. The
                 # shared runtime is authoritative, so suppress duplicate rows.
@@ -90,7 +85,6 @@ build_standard_level() (
                 echo "PolyLinux: $LAB_TITLE"
                 echo "Participant: $USER_ID"
                 echo "Exercise code: $EXERCISE_CODE"
-                echo "Theme: $(theme_field title)"
                 echo '__POLYLINUX_DIVIDER__'
                 echo 'This level is ready.'
             } > "$raw_readme"
@@ -115,7 +109,6 @@ build_standard_level() (
     printf '%s failed\n' "$levelToBuild" >&2
     exit 1
 )
-
 build_standard_levels() (
     failures=0
     pids=
@@ -141,9 +134,8 @@ build_standard_levels() (
     printf '%s level builds failed\n' "$failures" >> "$BUILD_LOG"
     exit 1
 )
-
 start_standard_levels() {
-    printf 'Preparing 10 %s levels using theme: %s\n' "$LAB_TITLE" "$(theme_field title)"
+    printf 'Preparing 10 %s levels.\n' "$LAB_TITLE"
     # The learner shell replaces the installer as soon as Level 1 is ready.
     # Ignore HUP and detach stdin so the remaining parallel workers survive
     # that handoff and can publish their ready/failed markers.

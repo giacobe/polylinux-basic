@@ -1,0 +1,16 @@
+admiration
+affection
+anger
+anxiety
+delight
+disgust
+excitement
+fear
+gratitude
+grief
+happiness
+hope
+loneliness
+pride
+sadness
+surprise

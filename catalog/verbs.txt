@@ -1,0 +1,16 @@
+assemble
+calculate
+compare
+deliver
+describe
+examine
+gather
+identify
+inspect
+measure
+organize
+prepare
+remove
+replace
+submit
+translate

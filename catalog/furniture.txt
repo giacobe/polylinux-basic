@@ -1,0 +1,16 @@
+armchair
+bench
+bookshelf
+cabinet
+chair
+couch
+counter
+desk
+dresser
+nightstand
+podium
+shelf
+stool
+table
+wardrobe
+workbench

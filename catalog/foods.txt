@@ -1,0 +1,16 @@
+burrito
+casserole
+dumpling
+noodles
+omelet
+pancake
+pasta
+pizza
+salad
+sandwich
+soup
+stew
+sushi
+taco
+waffle
+yogurt

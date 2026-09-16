@@ -1,0 +1,16 @@
+apron
+blazer
+boots
+cap
+coat
+dress
+gloves
+jacket
+jeans
+pajamas
+scarf
+shirt
+shorts
+skirt
+socks
+sweater

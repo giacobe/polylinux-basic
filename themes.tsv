@@ -1,0 +1,17 @@
+# id	slug	title	dict0..dictf category names
+0	university	University Life	people	furniture	musical_instruments	emotions	buildings	hand_tools	verbs	foods	containers	adverbs	plants	documents	adjectives	animals	vehicles	clothing
+1	travel	Travel and Tourism	animals	vehicles	clothing	people	furniture	musical_instruments	emotions	buildings	hand_tools	verbs	foods	containers	adverbs	plants	documents	adjectives
+2	clinic	Community Clinic	plants	documents	adjectives	animals	vehicles	clothing	people	furniture	musical_instruments	emotions	buildings	hand_tools	verbs	foods	containers	adverbs
+3	library	Public Library	foods	containers	adverbs	plants	documents	adjectives	animals	vehicles	clothing	people	furniture	musical_instruments	emotions	buildings	hand_tools	verbs
+4	restaurant	Restaurant Operations	buildings	hand_tools	verbs	foods	containers	adverbs	plants	documents	adjectives	animals	vehicles	clothing	people	furniture	musical_instruments	emotions
+5	sports	Sports League	furniture	musical_instruments	emotions	buildings	hand_tools	verbs	foods	containers	adverbs	plants	documents	adjectives	animals	vehicles	clothing	people
+6	festival	Community Festival	vehicles	clothing	people	furniture	musical_instruments	emotions	buildings	hand_tools	verbs	foods	containers	adverbs	plants	documents	adjectives	animals
+7	city	City Services	documents	adjectives	animals	vehicles	clothing	people	furniture	musical_instruments	emotions	buildings	hand_tools	verbs	foods	containers	adverbs	plants
+8	museum	Museum Collections	containers	adverbs	plants	documents	adjectives	animals	vehicles	clothing	people	furniture	musical_instruments	emotions	buildings	hand_tools	verbs	foods
+9	hotel	Hotel Operations	hand_tools	verbs	foods	containers	adverbs	plants	documents	adjectives	animals	vehicles	clothing	people	furniture	musical_instruments	emotions	buildings
+a	airport	Airport Operations	musical_instruments	emotions	buildings	hand_tools	verbs	foods	containers	adverbs	plants	documents	adjectives	animals	vehicles	clothing	people	furniture
+b	park	Park and Recreation	clothing	people	furniture	musical_instruments	emotions	buildings	hand_tools	verbs	foods	containers	adverbs	plants	documents	adjectives	animals	vehicles
+c	office	Office Workplace	adjectives	animals	vehicles	clothing	people	furniture	musical_instruments	emotions	buildings	hand_tools	verbs	foods	containers	adverbs	plants	documents
+d	research	Research Laboratory	adverbs	plants	documents	adjectives	animals	vehicles	clothing	people	furniture	musical_instruments	emotions	buildings	hand_tools	verbs	foods	containers
+e	transit	Transportation Network	verbs	foods	containers	adverbs	plants	documents	adjectives	animals	vehicles	clothing	people	furniture	musical_instruments	emotions	buildings	hand_tools
+f	film	Film Production	emotions	buildings	hand_tools	verbs	foods	containers	adverbs	plants	documents	adjectives	animals	vehicles	clothing	people	furniture	musical_instruments

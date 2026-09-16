@@ -1,0 +1,16 @@
+airplane
+ambulance
+bicycle
+bus
+ferry
+helicopter
+motorcycle
+sailboat
+scooter
+subway
+taxi
+tractor
+train
+tram
+truck
+van

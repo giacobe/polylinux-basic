@@ -182,6 +182,3 @@ write_failed_readme() {
     rm -f "$raw"
     mv "$tmp" "$home/README.txt"
 }
-# themes-v2 override
-_original_select_theme_marker=1
-. "$INSTALL_ROOT/theme-dictionaries.sh"

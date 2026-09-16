@@ -1,0 +1,16 @@
+application
+brochure
+checklist
+contract
+diagram
+handbook
+invoice
+itinerary
+manual
+memo
+passport
+receipt
+report
+schedule
+syllabus
+ticket

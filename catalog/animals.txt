@@ -1,0 +1,16 @@
+beaver
+camel
+dolphin
+eagle
+elephant
+giraffe
+horse
+otter
+panda
+parrot
+penguin
+rabbit
+turtle
+whale
+wolf
+zebra
