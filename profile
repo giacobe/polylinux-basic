@@ -1,6 +1,7 @@
 #!/bin/sh
 PS1='\W$ '
 cd "$HOME" || exit 1
+. "$HOME/.config/polylinux-colors.sh"
 clear
 box_line() { printf '* %-36.36s *\n' "$1"; }
 echo '****************************************'
