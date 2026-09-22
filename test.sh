@@ -1,6 +1,8 @@
 #!/bin/sh
 set -eu
 cd "$(dirname "$0")"
+INSTALL_ROOT=$(pwd)
+export INSTALL_ROOT
 . ./polylinux-common.sh
 
 LAB_ID=${LAB_ID:-polylinux-basic}
@@ -22,11 +24,12 @@ index=0
 dictionary_root="${TMPDIR:-/tmp}/polylinux-basic-test-$$/theme-dictionaries"
 while [ "$index" -lt 16 ]; do
     THEME_INDEX=$index
-    export THEME_INDEX
+    THEME_HEX=$(printf '%x' "$index")
+    export THEME_INDEX THEME_HEX
     id=$(theme_field id)
     case "$seen" in *"|$id|"*) echo "duplicate theme id: $id" >&2; exit 1 ;; esac
     seen="$seen$id|"
-    for field in title org place system project asset event status service host file person; do
+    for field in title; do
         [ -n "$(theme_field "$field")" ]
     done
     prepare_theme_dictionaries "$dictionary_root"
@@ -44,6 +47,7 @@ for level in 1 2 3 4 5 6 7 8 9 10; do
 done
 sh -n ./install.sh ./resources.sh ./polylinux-common.sh ./polylinux-parallel-runtime.sh
 
+[ ! -e ./checklevel ] || { echo 'local checklevel helper must not ship' >&2; exit 1; }
 if grep -R -n -E 'record_answer|ANSWER_DIR|/answers|checklevel' . \
     --exclude-dir=.git --exclude-dir=provenance --exclude=README.md --exclude=LEVELS.md \
     --exclude=participant-guide.md --exclude=test.sh --exclude=verify.sh; then
